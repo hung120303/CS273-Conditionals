@@ -15,6 +15,9 @@ public class Lab4BaseArea extends Canvas {
     // tells whether we've already translated our polygons
     private boolean alreadyTranslated = false;
     
+    // boolean to track color
+    private boolean alt = false;
+    
     /**
      * constructor
      */
@@ -89,6 +92,48 @@ public class Lab4BaseArea extends Canvas {
         
         // invoke our 'paint' method to draw the robot
         this.paint(g);
+        paintInfoMessage(g, alt);
+        alt = !alt;
+    }
+    
+    
+    /*
+     * 
+     * Context: Some students conducting this lab not realize how the 
+     * frame is being written over with the current changes, that is, 
+     * when the user checks/unchecks a box, it paints based on the 
+     * students 'paint()' method. 
+     * 
+     * Importance: This method will write to the frame a text message, 
+     * alternating between black and white colored text, indicating 
+     * that a user action has been read (checking/unchecking a box), 
+     * and that the 'paint()' method will paint new changes to the frame. 
+     * This will inform students conducting the lab that it's their 
+     * 'paint()' method affecting what is being painted to the frame 
+     * each time one checks or unchecks a box. 
+     * 
+     * Justification: This code is in a file separate file from the 
+     * Lab4Area class, so that it's clear that students shouldn't make 
+     * modifications to the info message, and only be making changes in 
+     * their Lab4Area class. The text alternates between black and 
+     * white, since only painting in one color will not be clear when 
+     * the code paints when the user checks/unchecks a box more than 
+     * once.
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
+    private void paintInfoMessage(Graphics g, boolean b){
+        g.setFont(new Font("Arial", Font.BOLD, 20));
+        g.setColor(Color.WHITE);
+        if(b){
+            g.setColor(Color.BLACK);
+        }
+        g.drawString("User checked/unchecked a box.", 80, 500); 
+        g.drawString("Calling paint() method to", 80, 525);
+        g.drawString("repaint new changes...", 80, 550); 
     }
 
     // instance variables for all the body parts

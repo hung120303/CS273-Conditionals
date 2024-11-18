@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=Lab4BaseArea
+comment0.text=\r\n\ class\ Lab4BaseArea\ --\ a\ panel\ for\ drawing\ a\ robot,\ suitable\ for\r\n\ subclassing\r\n\r\n\ @author\ Steven\ R.\ Vegdahl\r\n\ @version\ 2\ Feb\ 2019\r\n
+comment1.params=
+comment1.target=Lab4BaseArea()
+comment1.text=\r\n\ constructor\r\n
+comment10.params=p\ p2\ val
+comment10.target=void\ reflectY(java.awt.Polygon,\ java.awt.Polygon,\ int)
+comment10.text=\r\n\ reflectY\ --\ add\ points\ to\ a\ polygon\ based\ on\ reflecting\ from\ another\ polygon\r\n\ vertically\r\n\ \r\n\ @param\ p\ the\ original\ polygon\r\n\ @param\ p2\ the\ empty\ polygon\ to\ which\ points\ will\ be\ added\r\n\ @param\ val\ the\ reflection\ position\r\n
+comment11.params=x\ y
+comment11.target=void\ translateAll(int,\ int)
+comment11.text=\r\n\ translateAll\ --\ translates\ all\ our\ polygons\ by\ the\ given\ amount\r\n\ \r\n\ @param\ x\ the\ x-delta\r\n\ @param\ y\ the\ y-delta\r\n
+comment2.params=f
+comment2.target=void\ setFrame(Lab4Frame)
+comment2.text=\r\n\ setFrame\ --\ lets\ us\ know\ who\ our\ frame\ is\r\n
+comment3.params=s
+comment3.target=boolean\ isChecked(java.lang.String)
+comment3.text=\r\n\ isChecked\ --\ tells\ whether\ a\ checkbox\ is\ checked\r\n\ \r\n\ @param\ s\ the\ string\ that\ names\ the\ checkbox\r\n\ @return\ true\ if\ that\ checkbox\ is\ checked\r\n
+comment4.params=
+comment4.target=boolean\ whistleMoreRecent()
+comment4.text=\r\n\ whistleMoreRecent\ --\ tells\ whether\ 'whistle'\ was\ checked\ more\ recently\ than\r\n\ 'frown'\r\n\ \r\n\ @return\ true\ if\ 'whistle'\ was\ checked\ more\ recently\r\n
+comment5.params=
+comment5.target=int\ totalNumChecked()
+comment5.text=\r\n\ totalNumChecked\ --\ the\ total\ number\ of\ check-boxes\ that\ are\ checked\r\n\ \r\n\ @return\ the\ total\ number\ of\ checkboxes\ that\ are\ checked\r\n
+comment6.params=
+comment6.target=void\ repaint()
+comment6.text=\r\n\ repaint\ --\ repaints\ the\ visible\ area\r\n
+comment7.params=g\ b
+comment7.target=void\ paintInfoMessage(java.awt.Graphics,\ boolean)
+comment7.text=\r\n\ \r\n\ Context\:\ Some\ students\ conducting\ this\ lab\ not\ realize\ how\ the\ \r\n\ frame\ is\ being\ written\ over\ with\ the\ current\ changes,\ that\ is,\ \r\n\ when\ the\ user\ checks/unchecks\ a\ box,\ it\ paints\ based\ on\ the\ \r\n\ students\ 'paint()'\ method.\ \r\n\ \r\n\ Importance\:\ This\ method\ will\ write\ to\ the\ frame\ a\ text\ message,\ \r\n\ alternating\ between\ black\ and\ white\ colored\ text,\ indicating\ \r\n\ that\ a\ user\ action\ has\ been\ read\ (checking/unchecking\ a\ box),\ \r\n\ and\ that\ the\ 'paint()'\ method\ will\ paint\ new\ changes\ to\ the\ frame.\ \r\n\ This\ will\ inform\ students\ conducting\ the\ lab\ that\ it's\ their\ \r\n\ 'paint()'\ method\ affecting\ what\ is\ being\ painted\ to\ the\ frame\ \r\n\ each\ time\ one\ checks\ or\ unchecks\ a\ box.\ \r\n\ \r\n\ Justification\:\ This\ code\ is\ in\ a\ file\ separate\ file\ from\ the\ \r\n\ Lab4Area\ class,\ so\ that\ it's\ clear\ that\ students\ shouldn't\ make\ \r\n\ modifications\ to\ the\ info\ message,\ and\ only\ be\ making\ changes\ in\ \r\n\ their\ Lab4Area\ class.\ The\ text\ alternates\ between\ black\ and\ \r\n\ white,\ since\ only\ painting\ in\ one\ color\ will\ not\ be\ clear\ when\ \r\n\ the\ code\ paints\ when\ the\ user\ checks/unchecks\ a\ box\ more\ than\ \r\n\ once.\r\n\ \r\n\ \r\n\ \r\n\ \r\n\ \r\n
+comment8.params=
+comment8.target=void\ init()
+comment8.text=\r\n\ init\ \=\ initialized\ all\ our\ polygons\r\n
+comment9.params=p\ p2\ val
+comment9.target=void\ reflectX(java.awt.Polygon,\ java.awt.Polygon,\ int)
+comment9.text=\r\n\ reflectX\ --\ add\ points\ to\ a\ polygon\ based\ on\ reflecting\ from\ another\ polygon\r\n\ horizontally\r\n\ \r\n\ @param\ p\ the\ original\ polygon\r\n\ @param\ p2\ the\ empty\ polygon\ to\ which\ points\ will\ be\ added\r\n\ @param\ val\ the\ reflection\ position\r\n
+numComments=12
