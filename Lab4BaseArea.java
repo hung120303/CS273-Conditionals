@@ -99,8 +99,8 @@ public class Lab4BaseArea extends Canvas {
     
     /*
      * 
-     * Context: Some students conducting this lab not realize how the 
-     * frame is being written over with the current changes, that is, 
+     * Context: Some students conducting this lab may not realize how the 
+     * frame is being written over with the current changes. To explain more clearly, 
      * when the user checks/unchecks a box, it paints based on the 
      * students 'paint()' method. 
      * 
@@ -110,7 +110,13 @@ public class Lab4BaseArea extends Canvas {
      * and that the 'paint()' method will paint new changes to the frame. 
      * This will inform students conducting the lab that it's their 
      * 'paint()' method affecting what is being painted to the frame 
-     * each time one checks or unchecks a box. 
+     * each time one checks or unchecks a box. The info this change gives
+     * will result in saving the student's time understanding what is 
+     * happening underneath the hood without having to look through the 
+     * other classes, giving them more time to focus on their own Lab4area
+     * class, which will help them focus on the purpose of the lab, that being 
+     * conditional statements. 
+     * 
      * 
      * Justification: This code is in a file separate file from the 
      * Lab4Area class, so that it's clear that students shouldn't make 
